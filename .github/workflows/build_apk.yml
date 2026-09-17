@@ -23,11 +23,10 @@ jobs:
           flutter-version: '3.x'
           channel: 'stable'
 
-      - name: Accept Android Licenses
-        run: yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses || true
-
       - name: Get Flutter Dependencies
-        run: flutter pub get
+        run: |
+          flutter pub cache clean --force
+          flutter pub get
         working-directory: cypriot_ocr_app
 
       - name: Build Release APK
