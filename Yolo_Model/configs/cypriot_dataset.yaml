@@ -1,0 +1,64 @@
+path: . 
+
+train: images/train
+val: images/val
+test: images/test
+
+nc: 55
+
+names:
+  0: a
+  1: e
+  2: i
+  3: ja
+  4: jo
+  5: ka
+  6: ke
+  7: ki
+  8: ko
+  9: ku
+  10: la
+  11: le
+  12: li
+  13: lo
+  14: lu
+  15: ma
+  16: me
+  17: mi
+  18: mo
+  19: mu
+  20: na
+  21: ne
+  22: ni
+  23: 'no'
+  24: nu
+  25: o
+  26: pa
+  27: pe
+  28: pi
+  29: po
+  30: pu
+  31: ra
+  32: re
+  33: ri
+  34: ro
+  35: ru
+  36: sa
+  37: se
+  38: si
+  39: so
+  40: su
+  41: ta
+  42: te
+  43: ti
+  44: to
+  45: tu
+  46: u
+  47: wa
+  48: we
+  49: wi
+  50: wo
+  51: xa
+  52: xe
+  53: za
+  54: zo

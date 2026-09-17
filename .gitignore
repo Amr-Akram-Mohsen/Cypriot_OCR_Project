@@ -1,0 +1,17 @@
+# Python / YOLO temporary files
+__pycache__/
+*.pyc
+*.pt
+runs/
+temp*.jpg
+
+# Flutter build artifacts
+cypriot_ocr_app/build/
+cypriot_ocr_app/.dart_tool/
+cypriot_ocr_app/.flutter-plugins
+cypriot_ocr_app/.flutter-plugins-dependencies
+
+# IDE settings
+.vscode/
+.idea/
+
