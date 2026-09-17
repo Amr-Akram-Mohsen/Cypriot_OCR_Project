@@ -21,13 +21,17 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.x'
+          channel: 'stable'
 
-      - name: Get Dependencies
+      - name: Accept Android Licenses
+        run: yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses || true
+
+      - name: Get Flutter Dependencies
         run: flutter pub get
         working-directory: cypriot_ocr_app
 
       - name: Build Release APK
-        run: flutter build apk --release
+        run: flutter build apk --release --no-tree-shake-icons
         working-directory: cypriot_ocr_app
 
       - name: Upload APK Artifact
